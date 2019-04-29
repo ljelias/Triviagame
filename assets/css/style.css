@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    font-family: Arial, "Helvetica";
+    background-color: rgb(66, 218, 74);
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 0 10px 0;
+    justify-content: center;
+}
+
+header {
+    border: 12px solid silver;
+    text-align: center;
+    margin: 4px auto;
+    height: 150px;
+    padding-top: 10px;
+    width: 65%;
+    background-color: red;
+}
+
+header h2 {
+    font-size: 1.8rem;
+    padding-top: 6px;
+}
+
+
+header h4 {
+    font-size: 1.5rem;
+    padding-top: 4px;
+    font-style: italic;
+}
+
+.startstop {
+    margin: 30px auto;
+    text-align: center;
+}
+
+.qbox {
+    border: 12px solid silver;
+    text-align: left;
+    margin: 4px auto;
+    height: 900px;
+    padding: 0px 10px 15px 10px;
+    width: 65%;
+    background-color: rgb(233, 248, 24);
+}
+
+.qbox p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+form p {
+    margin-top: 18px;
+    font-weight: bold;
+}
+
+label {
+    margin-left: 15px;
+}
+
+
