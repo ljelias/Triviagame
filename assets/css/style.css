@@ -1,67 +1,95 @@
 * {
     box-sizing: border-box;
 }
-
+ 
 .container {
     font-family: Arial, "Helvetica";
-    background-color: rgb(66, 218, 74);
-    width: 70%;
+    background: url(../images/blanket.jpg);
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding: 20px 0 10px 0;
+    padding: 20px 0 40px 0;
     justify-content: center;
 }
 
 header {
     border: 12px solid silver;
+    border-radius: 18px;
     text-align: center;
-    margin: 4px auto;
+    margin: 0px auto 6px auto;
     height: 150px;
-    padding-top: 10px;
-    width: 65%;
-    background-color: red;
+    padding-top: 3px;
+    width: 60%;
+    background-color: rgb(247, 47, 47);
 }
 
-header h2 {
-    font-size: 1.8rem;
-    padding-top: 6px;
+h2 {
+    font-family: 'Patrick Hand', cursive;
+    font-size: 2.6rem;
+    padding-top: 0px;
 }
-
+ 
+h3 {
+    font-size: 1.6rem;
+    padding-top: 12px;
+}
 
 header h4 {
-    font-size: 1.5rem;
-    padding-top: 4px;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 2.4rem;
+    padding-top: 0px;
     font-style: italic;
 }
 
-.startstop {
-    margin: 30px auto;
-    text-align: center;
-}
+button {
+    display: block;
+    width: 240px;
+    height: 60px;
+    margin: 20px auto 0px auto;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 36px;
+    cursor: pointer;
+    background-color: greenyellow;
+    border: 1px solid black;
+    border-radius: 15px;
+  }
+
+button:hover {
+    background: rgb(37, 221, 49);
+    border: 2px solid blue;
+    border-radius: 15px;
+  }
 
 .qbox {
-    border: 12px solid silver;
+    border: 15px solid rgb(180, 176, 184);
+    border-radius: 18px;
     text-align: left;
-    margin: 4px auto;
+    margin: 0px auto 20px auto;
     height: 900px;
-    padding: 0px 10px 15px 10px;
-    width: 65%;
-    background-color: rgb(233, 248, 24);
+    padding: 25px 25px 20px 25px;
+    width: 60%;
+    background-color: rgb(230, 241, 75);
 }
 
-.qbox p {
+#questions p {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 16px;
-    margin-bottom: 8px;
-}
-
-form p {
-    margin-top: 18px;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 5px;
     font-weight: bold;
 }
 
 label {
-    margin-left: 15px;
+    font-size: 16px;
+    margin-left: 24px;
 }
 
+
+#results {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    text-align: center;
+
+}
 

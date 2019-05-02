@@ -1,220 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
+    <link href="https://fonts.googleapis.com/css?family=Patrick+Hand" rel="stylesheet">
     <title>TriviaGame</title>
 
 </head>
+
 <body>
     <div class="container">
         <header>
             <h2>Spanish Vocabulary Quiz</h2>
             <h4>Colors -- Los Colores</h4>
-            <h2>Time Remaining: <span id="countdown">---</span></h2>
+            <h3>Time Remaining: <span id="countdown">---</span> seconds</h3>
         </header>
 
         <div class="qbox">
-            <div class="startstop">Start Button HERE</div>
-            <form id="questions">
 
-                 <section>
+            <div><button id="start">Start</button></div>
+            <div id="questions">
+                <section>
                     <p>1: rojo</p>
                     <label for="blue">blue</label>
-                        <input type="radio" id="blue" name="rojo" value="blue">
+                    <input type="radio" id="blue" value="false" name="rojo">
                     <label for="green">green</label>
-                        <input type="radio" id="green" name="rojo" value="green">
+                    <input type="radio" id="green" value="false" name="rojo">
                     <label for="red">red</label>
-                        <input type="radio" id="red" name="rojo" value="red">
+                    <input type="radio" id="red"  value="true" name="rojo">
                     <label for="orange">orange</label>
-                        <input type="radio" id="orange" name="rojo" value="orange">
+                    <input type="radio" id="orange" value="false" name="rojo">
                     <label for="yellow">yellow</label>
-                        <input type="radio" id="yellow" name="rojo" value="yellow">
+                    <input type="radio" id="yellow" value="false" name="rojo" >
                     <label for="purple">purple</label>
-                        <input type="radio" id="purple" name="rojo" value="purple">
+                    <input type="radio" id="purple" value="false" name="rojo" >
                 </section>
                 <section>
                     <p>2: amarillo</p>
                     <label for="yellow">yellow</label>
-                        <input type="radio" id="yellow" value="yellow" name="amarillo">
+                    <input type="radio" id="yellow" value="true" name="amarillo">
                     <label for="purple">purple</label>
-                        <input type="radio" id="purple" value="purple" name="amarillo">
+                    <input type="radio" id="purple" value="false" name="amarillo">
                     <label for="white">white</label>
-                        <input type="radio" id="white" value="white" name="amarillo">
+                    <input type="radio" id="white" value="false" name="amarillo">
                     <label for="gray">gray</label>
-                        <input type="radio" id="gray" value="gray" name="amarillo">
+                    <input type="radio" id="gray" value="false" name="amarillo">
                     <label for="black">black</label>
-                        <input type="radio" id="black" value="black" name="amarillo">
+                    <input type="radio" id="black" value="false" name="amarillo">
                     <label for="brown">brown</label>
-                        <input type="radio" id="brown" value="brown" name="amarillo">
+                    <input type="radio" id="brown" value="false" name="amarillo">
                 </section>
                 <section>
                     <p>3: plateado</p>
                     <label for="blue">blue</label>
-                        <input type="radio" id="blue" value="blue" name="plateado">
+                    <input type="radio" id="blue" value="false" name="plateado">
                     <label for="yellow">yellow</label>
-                        <input type="radio" id="yellow" value="yellow" name="plateado">
+                    <input type="radio" id="yellow" value="false" name="plateado">
                     <label for="pink">pink</label>
-                        <input type="radio" id="pink" value="pink" name="plateado">
+                    <input type="radio" id="pink" value="false" name="plateado">
                     <label for="silver">silver</label>
-                        <input type="radio" id="silver" value="silver" name="plateado">
+                    <input type="radio" id="silver" value="true" name="plateado">
                     <label for="green">green</label>
-                        <input type="radio" id="green" value="green" name="plateado">
-                    <label for="yellow">yellow</label>
-                        <input type="radio" id="yellow" value="yellow" name="plateado">
+                    <input type="radio" id="green" value="false" name="plateado">
+                    <label for="white">white</label>
+                    <input type="radio" id="white" value="false" name="plateado">
                 </section>
                 <section>
-                        <p>4: cafe</p>
+                    <p>4: cafe</p>
                     <label for="orange">orange</label>
-                        <input type="radio" id="orange" value="orange" name="cafe">
+                    <input type="radio" id="orange" value="false" name="cafe">
                     <label for="purple">purple</label>
-                        <input type="radio" id="purple" value="purple" name="cafe">
+                    <input type="radio" id="purple" value="false" name="cafe">
                     <label for="white">white</label>
-                        <input type="radio" id="white" value="white" name="cafe">
+                    <input type="radio" id="white" value="false" name="cafe">
                     <label for="black">black</label>
-                        <input type="radio" id="black" value="black" name="cafe">
+                    <input type="radio" id="black" value="false" name="cafe">
                     <label for="brown">brown</label>
-                        <input type="radio" id="brown" value="brown" name="cafe">
+                    <input type="radio" id="brown" value="true" name="cafe">
                     <label for="pink">pink</label>
-                        <input type="radio" id="silver" value="silver" name="cafe">
+                    <input type="radio" id="silver" value="false" name="cafe">
                 </section>
                 <section>
-                        <p>5: azul</p>
+                    <p>5: azul</p>
                     <label for="pink">pink</label>
-                        <input type="radio" id="pink" value="pink" name="azul">
+                    <input type="radio" id="pink" value="false" name="azul">
                     <label for="silver">silver</label>
-                        <input type="radio" id="silver" value="silver" name="azul">
+                    <input type="radio" id="silver" value="false" name="azul">
                     <label for="blue">blue</label>
-                        <input type="radio" id="blue" value="blue" name="azul">
+                    <input type="radio" id="blue" value="true" name="azul">
                     <label for="green">green</label>
-                        <input type="radio" id="green" value="green" name="azul">
+                    <input type="radio" id="green" value="false" name="azul">
                     <label for="purple">purple</label>
-                        <input type="radio" id="purple" value="purple" name="azul">
+                    <input type="radio" id="purple" value="false" name="azul">
                     <label for="white">white</label>
-                        <input type="radio" id="white" value="white" name="azul">
-
+                    <input type="radio" id="white" value="false" name="azul">
                 </section>
                 <section>
                     <p>6: verde</p>
                     <label for="white">white</label>
-                        <input type="radio" id="white" value="white" name="verde">
+                    <input type="radio" id="white" value="false" name="verde">
                     <label for="black">black</label>
-                        <input type="radio" id="black" value="black" name="verde">
+                    <input type="radio" id="black" value="false" name="verde">
                     <label for="pink">pink</label>
-                        <input type="radio" id="pink" value="pink" name="verde">
-                        <label for="green">green</label>
-                        <input type="radio" id="green" value="green" name="verde">
+                    <input type="radio" id="pink" value="false" name="verde">
+                    <label for="green">green</label>
+                    <input type="radio" id="green" value="true" name="verde">
                     <label for="orange">orange</label>
-                        <input type="radio" id="orange" value="orange" name="verde">
+                    <input type="radio" id="orange" value="false" name="verde">
                     <label for="yellow">yellow</label>
-                        <input type="radio" id="yellow" value="yellow" name="verde">
-
+                    <input type="radio" id="yellow" value="false" name="verde">
                 </section>
                 <section>
                     <p>7: gris</p>
                     <label for="red">red</label>
-                        <input type="radio" id="red" value="red" name="gris">
+                    <input type="radio" id="red" value="false" name="gris">
                     <label for="purple">purple</label>
-                        <input type="radio" id="purple" value="purple" name="gris">
+                    <input type="radio" id="purple" value="false" name="gris">
                     <label for="silver">silver</label>
-                        <input type="radio" id="silver" value="silver" name="gris">
-                    <label for="gray">gray</label>
-                        <input type="radio" id="gray" value="gray" name="gris">
+                    <input type="radio" id="silver" value="false" name="gris">
                     <label for="brown">brown</label>
-                        <input type="radio" id="brown" value="brown" name="gris">
+                    <input type="radio" id="brown" value="false" name="gris">
                     <label for="blue">blue</label>
-                        <input type="radio" id="blue" value="blue" name="gris">
+                    <input type="radio" id="blue" value="false" name="gris">
+                    <label for="gray">gray</label>
+                    <input type="radio" id="gray" value="true" name="gris">
                 </section>
                 <section>
-                        <p>8: anaranjado</p>
+                    <p>8: anaranjado</p>
                     <label for="green">green</label>
-                        <input type="radio" id="green" value="green" name="anaran">
-                    <label for="red">red</label>
-                        <input type="radio" id="red" value="red" name="anaran">
+                    <input type="radio" id="green" value="false" name="anaran">
                     <label for="orange">orange</label>
-                        <input type="radio" id="orange" value="orange" name="anaran">
-                    <label for="yellow">yellow</label>
-                        <input type="radio" id="yellow" value="yellow" name="anaran">
-                    <label for="gray">gray</label>
-                        <input type="radio" id="gray" value="gray" name="anaran">
-                    <label for="black">black</label>
-                        <input type="radio" id="black" value="black" name="anaran">
-                </section>
-                <section>
-                        <p>9: negro</p>
-                    <label for="purple">purple</label>
-                        <input type="radio" id="purple" value="purple" name="negro">
-                    <label for="white">white</label>
-                        <input type="radio" id="white" value="white" name="negro">
-                    <label for="black">black</label>
-                        <input type="radio" id="black" value="black" name="negro">
-                    <label for="brown">brown</label>
-                        <input type="radio" id="brown" value="brown" name="negro">
-                    <label for="pink">pink</label>
-                        <input type="radio" id="pink" value="pink" name="negro">
-                    <label for="silver">silver</label>
-                        <input type="radio" id="silver" value="silver" name="negro">
-            
-                </section>
-                <section>
-                        <p>10: morado</p>
-                    <label for="silver">silver</label>
-                        <input type="radio" id="silver" value="silver" name="morado">
-                    <label for="blue">blue</label>
-                        <input type="radio" id="blue" value="blue" name="morado">
-                    <label for="white">white</label>
-                        <input type="radio" id="white" value="white" name="morado">
-                    <label for="gray">gray</label>
-                        <input type="radio" id="gray" value="gray" name="morado">
-                    <label for="pink">pink</label>
-                        <input type="radio" id="pink" value="pink" name="morado">
-                    <label for="purple">purple</label>
-                        <input type="radio" id="purple" value="purple" name="morado">
-            
-                </section>
-                <section>
-                        <p>11: blanco</p>
-                    <label for="blue">blue</label>
-                        <input type="radio" id="blue" value="blue" name="blanco">
-                    <label for="purple">purple</label>
-                        <input type="radio" id="purple" value="purple" name="blanco">
-                    <label for="white">white</label>
-                        <input type="radio" id="white" value="white" name="blanco">
-                    <label for="black">black</label>
-                        <input type="radio" id="black" value="black" name="blanco">
-                    <label for="brown">brown</label>
-                        <input type="radio" id="brown" value="brown" name="blanco">
-                    <label for="silver">silver</label>
-                        <input type="radio" id="silver" value="silver" name="blanco">            
-                </section>
-                <section>
-                        <p>12: rosado</p>
-                    <label for="brown">brown</label>
-                        <input type="radio" id="brown" value="brown" name="rosado">
+                    <input type="radio" id="orange" value="true" name="anaran">
                     <label for="red">red</label>
-                        <input type="radio" id="red" value="red" name="rosado">
-                    <label for="orange">orange</label>
-                        <input type="radio" id="orange" value="orange" name="rosado">
-                    <label for="pink">pink</label>
-                        <input type="radio" id="pink" value="pink" name="rosado">
+                    <input type="radio" id="red" value="false" name="anaran">
                     <label for="yellow">yellow</label>
-                        <input type="radio" id="yellow" value="yellow" name="rosado">
+                    <input type="radio" id="yellow" value="false" name="anaran">
                     <label for="gray">gray</label>
-                        <input type="radio" id="gray" value="gray" name="rosado">              
+                    <input type="radio" id="gray" value="false" name="anaran">
+                    <label for="black">black</label>
+                    <input type="radio" id="black" value="false" name="anaran">
                 </section>
-                <div class="startstop">SUBMIT Button HERE</div>
-            </form>
+                <section>
+                    <p>9: negro</p>
+                    <label for="purple">purple</label>
+                    <input type="radio" id="purple" value="false" name="negro">
+                    <label for="white">white</label>
+                    <input type="radio" id="white" value="false" name="negro">
+                    <label for="black">black</label>
+                    <input type="radio" id="black" value="true" name="negro">
+                    <label for="brown">brown</label>
+                    <input type="radio" id="brown" value="false" name="negro">
+                    <label for="pink">pink</label>
+                    <input type="radio" id="pink" value="false" name="negro">
+                    <label for="silver">silver</label>
+                    <input type="radio" id="silver" value="false" name="negro">
+                </section>
+                <section>
+                    <p>10: morado</p>
+                    <label for="purple">purple</label>
+                    <input type="radio" id="purple" value="true" name="morado">
+                    <label for="silver">silver</label>
+                    <input type="radio" id="silver" value="false" name="morado">
+                    <label for="blue">blue</label>
+                    <input type="radio" id="blue" value="false" name="morado">
+                    <label for="white">white</label>
+                    <input type="radio" id="white" value="false" name="morado">
+                    <label for="gray">gray</label>
+                    <input type="radio" id="gray" value="false" name="morado">
+                    <label for="pink">pink</label>
+                    <input type="radio" id="pink" value="false" name="morado">
+                </section>
+                <section>
+                    <p>11: blanco</p>
+                    <label for="blue">blue</label>
+                    <input type="radio" id="blue" value="false" name="blanco">
+                    <label for="purple">purple</label>
+                    <input type="radio" id="purple" value="false" name="blanco">
+                    <label for="black">black</label>
+                    <input type="radio" id="black" value="false" name="blanco">
+                    <label for="brown">brown</label>
+                    <input type="radio" id="brown" value="false" name="blanco">
+                    <label for="white">white</label>
+                    <input type="radio" id="white" value="true" name="blanco">
+                    <label for="silver">silver</label>
+                    <input type="radio" id="silver" value="false" name="blanco">
+                </section>
+                <section>
+                    <p>12: rosado</p>
+                    <label for="brown">brown</label>
+                    <input type="radio" id="brown" value="false" on-click="check();" name="rosado">
+                    <label for="red">red</label>
+                    <input type="radio" id="red" value="false" name="rosado">
+                    <label for="orange">orange</label>
+                    <input type="radio" id="orange" value="false" name="rosado">
+                    <label for="pink">pink</label>
+                    <input type="radio" id="pink" value="true" name="rosado">
+                    <label for="yellow">yellow</label>
+                    <input type="radio" id="yellow" value="false" name="rosado">
+                    <label for="gray">gray</label>
+                    <input type="radio" id="gray" value="false" name="rosado">
+                </section>
+            </div>
+            <div><button id="finish">Finish</button></div>
+            <div id="results">
+                <h2>Your Results</h2>
+                <h3>Correct: <span></span></h3>
+                <h3>Incorrect: <span></span></h3>
+                <h3>Unanswered: <span></span></h3>
+            </div>
         </div>
     </div>
+    </div>
 
-
-<script src="assets/javascript/game.js"></script>
+    <script src="assets/javascript/app.js"></script>
 </body>
+
 </html>
