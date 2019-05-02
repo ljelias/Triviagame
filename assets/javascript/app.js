@@ -7,9 +7,9 @@ $(document).ready(function () {
 
     var timerNumber = 60;
     var intervalId;
-    //var rightAnswer = 0;
-   // var wrongAnswer = 0;
-    //var notAnswered = 0;
+    var rightAnswer = 0;
+    var wrongAnswer = 0;
+    var notAnswered = 0;
 
     
     $('#start').on('click', function() {
@@ -36,8 +36,9 @@ $(document).ready(function () {
         $("#countdown").html(timerNumber);
         // stop at zero seconds
         if (timerNumber === 0) {
-            wrapup();
             stop();
+            wrapup();
+            postTallies();
         }
     }
 
@@ -47,8 +48,9 @@ $(document).ready(function () {
 
     $('#finish').on('click', function() {
         $('#finish').hide();
-        wrapup();
         stop();
+        wrapup();
+        postTallies();
     });
 
     function wrapup () {
@@ -59,12 +61,17 @@ $(document).ready(function () {
 
     //tally right and wrong answers 
     //find radio buttons selected with value of true and value of false
-    //$('input[type=radio]') function () {
-    //    rightAnswer = ;
-    //    wrongAnswer = ;
-    //    notAnswered = (12 - (rightAnswer + wrongAnswer));
-    //});
+    $('input[type=radio]').on ('change', function(){
+        rightAnswer = $('input[value=true]:checked').length;
+        wrongAnswer = $('input[value=false]:checked').length;
+        notAnswered = (12 - (rightAnswer + wrongAnswer));
+        });
 
     //post tallies to results div
+    function postTallies () {
+        $("#totalright").html(rightAnswer);
+        $("#totalwrong").html(wrongAnswer);
+        $("#totalunanswered").html(notAnswered);
+    }
 
 });

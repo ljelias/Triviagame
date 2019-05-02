@@ -68,7 +68,7 @@ button:hover {
     height: 900px;
     padding: 25px 25px 20px 25px;
     width: 60%;
-    background-color: rgb(230, 241, 75);
+    background-color: rgb(230, 241, 75, .9);
 }
 
 #questions p {
